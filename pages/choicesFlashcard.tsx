@@ -2,6 +2,7 @@ import React from "react";
 import { GetChoiceCard, VerifyChoiceCard } from "../component/GetChoicesCard";
 import dataJson from "../component/data.json";
 import { Layout } from "../component/layout";
+import Link from "next/link";
 
 const shuffleArray = (array: string[]): string[] => {
   for (let i = array.length - 1; i > 0; i--) {

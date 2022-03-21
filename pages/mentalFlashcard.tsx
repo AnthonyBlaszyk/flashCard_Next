@@ -2,6 +2,7 @@ import React from "react";
 import { GetMentalCard } from "../component/GetMentalCard";
 import dataJson from "../component/data.json";
 import { Layout } from "../component/layout";
+import Link from "next/link";
 
 export const MentalCard = (): JSX.Element => {
   const [randomNumber, setRandomNumber] = React.useState(
@@ -10,6 +11,21 @@ export const MentalCard = (): JSX.Element => {
 
   return (
     <Layout>
+      <p>
+        Question number :
+        <Link href="/mentalFlashCard/1">
+          <a>1</a>
+        </Link>
+        <Link href="/mentalFlashCard/2">
+          <a>2</a>
+        </Link>
+        <Link href="/mentalFlashCard/3">
+          <a>3</a>
+        </Link>
+        <Link href="/mentalFlashCard/4">
+          <a>4</a>
+        </Link>
+      </p>
       <div className="card">
         <h3>{dataJson.data[randomNumber].question}</h3>
         <div className="underCard">
